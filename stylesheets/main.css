@@ -1,0 +1,593 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'museo500';
+    src: url('../fonts/museo500-regular-webfont.eot');
+    src: url('../fonts/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo500-regular-webfont.woff2') format('woff2'),
+         url('../fonts/museo500-regular-webfont.woff') format('woff'),
+         url('../fonts/museo500-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo500-regular-webfont.svg#museo500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans300';
+    src: url('../fonts/museosans-300-webfont.eot');
+    src: url('../fonts/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans-300-webfont.woff2') format('woff2'),
+         url('../fonts/museosans-300-webfont.woff') format('woff'),
+         url('../fonts/museosans-300-webfont.ttf') format('truetype'),
+         url('../fonts/museosans-300-webfont.svg#museo_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('../fonts/museosans-100-webfont.eot');
+    src: url('../fonts/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans-100-webfont.woff2') format('woff2'),
+         url('../fonts/museosans-100-webfont.woff') format('woff'),
+         url('../fonts/museosans-100-webfont.ttf') format('truetype'),
+         url('../fonts/museosans-100-webfont.svg#museo_sans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo300';
+    src: url('../fonts/museo300-regular-webfont.eot');
+    src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo300-regular-webfont.woff2') format('woff2'),
+         url('../fonts/museo300-regular-webfont.woff') format('woff'),
+         url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo300-regular-webfont.svg#museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Classics */
+
+.no-padding{
+  padding: 0 !important;
+}
+
+.lines-about{
+  margin-top:20px;
+  background: url(../img/lines-about.png) repeat;
+  width:926px;
+  height:20px;
+}
+
+.lines-illustrations{
+  margin-top:20px;
+  background: url(../img/lines-illustrations.png) repeat;
+  width:926px;
+  height:20px;
+}
+
+.lines-interfaces{
+  margin-top:20px;
+  background: url(../img/lines-interfaces.png) repeat;
+  width:926px;
+  height:20px;
+}
+
+.lines-books{
+  margin-top:20px;
+  background: url(../img/lines-books.png) repeat;
+  width:926px;
+  height:20px;
+}
+
+.lines-contact{
+  margin-top:20px;
+  background: url(../img/lines-contact.png) repeat;
+  width:926px;
+  height:20px;
+}
+
+footer p{
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+footer span{
+  margin-left: 5px;
+}
+
+
+
+/* Menu Styles */
+.container {
+  width: 930px !important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 !important;
+}
+
+.menu {
+  width: 930px;
+  /*height:768px;*/
+  position: fixed;
+}
+
+/* Parts of the menu */
+.about-me {
+  width: 318px;
+  height: 584px;
+  background: url(../img/menu-aboutme.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.about-me:hover {
+  width: 318px;
+  height: 653px;
+  background: url(../img/menu-aboutme-hover.png) no-repeat;
+  position: absolute;
+  background-size: 90%;
+  top: -12px;
+  left: 100px;
+}
+
+.books {
+  width: 241px;
+  height: 190px;
+  background: url(../img/menu-books.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 610px;
+  top: 240px;
+}
+
+.books:hover {
+  width: 289px;
+  height: 190px;
+  background: url(../img/menu-books-hover.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 609px;
+  top: 239px;
+}
+
+.contact {
+  width: 172px;
+  height: 142px;
+  background: url(../img/menu-contact.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 480px;
+  top: 63px;
+}
+
+.contact:hover {
+  width: 228px;
+  height: 204px;
+  background: url(../img/menu-contact-hover.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 480px;
+  top: 7px;
+}
+
+.illustrations {
+  width: 148px;
+  height: 135px;
+  background: url(../img/menu-illustrations.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 475px;
+  top: 452px;
+}
+
+.illustrations:hover {
+  width: 168px;
+  height: 195px;
+  background: url(../img/menu-illustrations-hover.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 457px;
+  top: 452px;
+}
+
+.interfaces {
+  width: 175px;
+  height: 167px;
+  background: url(../img/menu-interfaces.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 650px;
+  top: 450px;
+}
+
+.interfaces:hover {
+  width: 225px;
+  height: 219px;
+  background: url(../img/menu-interfaces-hover.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 650px;
+  top: 403px;
+}
+
+.bow {
+  width: 71px;
+  height: 68px;
+  background: url(../img/img-bow.png) no-repeat;
+  position: absolute;
+  left: 400px;
+  top: 50px;
+}
+
+.logo {
+  width: 231px;
+  height: 162px;
+  background: url(../img/img-logo.png) no-repeat;
+  position: absolute;
+  left: 335px;
+  top: 250px;
+}
+
+.pony {
+  width: 111px;
+  height: 149px;
+  background: url(../img/img-pony.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 676px;
+  top: 87px;
+}
+
+.skates {
+  width: 140px;
+  height: 213px;
+  background: url(../img/img-skates.png) no-repeat;
+  background-size: 90%;
+  position: absolute;
+  left: 300px;
+  top: 420px;
+}
+
+/* Navigation */
+
+.nav-about-me{
+  width: 139px;
+  height: 45px;
+  background: url(../img/nav-aboutme.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-about-me.active{
+  width: 139px;
+  height: 45px;
+  background: url(../img/nav-aboutme-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-about-me:hover{
+  width: 139px;
+  height: 45px;
+  background: url(../img/nav-aboutme-hover.png) no-repeat;
+  display:inline-block;
+}
+
+
+.nav-illustrations{
+  width: 144px;
+  height: 41px;
+  background: url(../img/nav-ilustraciones.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-illustrations.active{
+  width: 144px;
+  height: 41px;
+  background: url(../img/nav-ilustraciones-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-illustrations:hover{
+  width: 144px;
+  height: 41px;
+  background: url(../img/nav-ilustraciones-hover.png) no-repeat;
+  display:inline-block;
+  text-decoration: none;
+}
+
+.nav-interfaces{
+  width: 139px;
+  height: 49px;
+  background: url(../img/nav-interfaces.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-interfaces.active{
+  width: 139px;
+  height: 49px;
+  background: url(../img/nav-interfaces-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-interfaces:hover{
+  width: 139px;
+  height: 49px;
+  background: url(../img/nav-interfaces-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-libros{
+  width: 132px;
+  height: 35px;
+  background: url(../img/nav-libros.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-libros.active{
+  width: 132px;
+  height: 35px;
+  background: url(../img/nav-libros-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-libros:hover{
+  width: 132px;
+  height: 35px;
+  background: url(../img/nav-libros-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-contacto{
+  width: 137px;
+  height: 43px;
+  background: url(../img/nav-contacto.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-contacto.active{
+  width: 137px;
+  height: 43px;
+  background: url(../img/nav-contacto-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.nav-contacto:hover{
+  width: 137px;
+  height: 43px;
+  background: url(../img/nav-contacto-hover.png) no-repeat;
+  display:inline-block;
+}
+
+
+
+/*Bootstrap styles */
+
+.navbar-brand{
+  padding: 0 !important;
+  height:inherit !important;
+  margin-left: 0 !important;
+  margin-right: 20px;
+}
+.navbar-nav{
+  margin-top: 24px !important;
+  width: 760px;
+}
+
+.navbar-nav a{
+  margin-left: 10px;  
+}
+
+.navbar-nav:hover a{
+  background-color: transparent !important;
+}
+
+.navbar-nav a{
+  background-color: transparent !important;
+}
+
+.navbar{
+  margin-bottom: 5px !important;
+}
+
+
+/*Content*/
+
+p{
+  font-family: 'museo_sans300';
+  font-size: 14px;
+}
+
+h3{
+  font-family: 'museo300' !important;
+}
+
+h2.illus{
+  color:#F39C21;
+}
+
+h2.inter{
+  color:#dc182f;
+}
+
+h2.lib{
+  color:#2ebdbb;
+}
+
+h3.conta{
+  color:#652858;
+  text-align: left;
+  margin-left: 0;
+}
+
+h2{
+  font-family: 'museo300' !important;
+  font-size: 28px !important;
+  margin-left: 34px;
+  text-align: center;
+}
+
+h4{
+  font-family: 'museo300' !important;
+  font-size: 20px !important;
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 0!important;
+  margin-bottom: 40px !important;
+}
+
+h4.illus{
+  color:#F39C21;
+}
+
+h4.inter{
+  color:#dc182f;
+}
+
+h4.lib{
+  color:#2ebdbb;
+}
+
+.date{
+  font-family: 'museo_sans300';
+  font-size: 13px;
+  color:#888;
+}
+
+.title{
+  margin-bottom: 40px;
+}
+
+.go-back{
+  margin-left: 35px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color:#505153;
+}
+
+.row-projects{
+
+margin-bottom: 40px;
+
+}
+
+.box{
+  width:200px;
+  height:200px;
+  background-color: #f99e1b;
+}
+
+.box.inter{
+    background-color: #dc182f;
+}
+
+.box.lib{
+    background-color: #2ebdbb;
+}
+
+
+.box:hover{
+  opacity: 0.6;
+}
+
+
+.project-title{
+  width:95%;
+  text-align: center;
+  margin-top: 25px;
+  font-family: 'museo_sans300';
+  font-size: 15px;
+}
+
+/* Icons */
+
+.icon-pdf-portafolio{
+  margin-top: 20px;
+  width: 229px;
+  height: 100px;
+  background: url(../img/icon-pdf-portafolio.png) no-repeat;
+  display:inline-block;
+}
+
+.icon-pdf-portafolio:hover{
+  margin-top: 20px;
+  width: 229px;
+  height: 100px;
+  background: url(../img/icon-pdf-portafolio-hover.png) no-repeat;
+  display:inline-block;
+}
+
+.icon-illus{
+  width: 25px;
+  height: 41px;
+  background: url(../img/icon-illus.png) no-repeat;
+  position: absolute;
+  top:12px;
+  left:380px;
+}
+
+.icon-inter{
+  width: 27px;
+  height: 28px;
+  background: url(../img/icon-inter.png) no-repeat;
+  position: absolute;
+  top:18px;
+  left:390px;
+}
+
+.icon-lib{
+  width: 32px;
+  height: 34px;
+  background: url(../img/icon-lib.png) no-repeat;
+  position: absolute;
+  top:18px;
+  left:412px;
+}
+
+.icon-back{
+  width: 22px;
+  height: 31px;
+  background: url(../img/back.png) no-repeat;
+  position: absolute;
+  top:-5px;
+}
+
+/* Carousel options */
+
+.carousel-control{
+  background-image: none !important;
+}
+
+
+.carousel-control .inter-next{
+  opacity: 0.8 !important;
+  color:red !important;
+}
+
+.carousel-control .lib-next{
+  opacity: 0.8 !important;
+  color:#dc182f !important;
+}
+
+
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+  right: 36% !important;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-next{
+  left: 36% !important;
+}
+
+.saludmental{
+  bottom:-7px !important;
+}
+
+.johnny{
+  bottom: 29px !important;
+}
+
