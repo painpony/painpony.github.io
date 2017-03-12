@@ -450,8 +450,8 @@ section {
     margin: auto;
     text-align: center;
   }
-  /* line 359, ../sass/main.scss */
-  .my-work .container .p {
+  /* line 358, ../sass/main.scss */
+  .my-work .container .title .p {
     text-align: center;
   }
 }
