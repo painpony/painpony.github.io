@@ -450,6 +450,10 @@ section {
     margin: auto;
     text-align: center;
   }
+  /* line 358, ../sass/main.scss */
+  .my-work .container .title p {
+    text-align: center;
+  }
 }
 /*section{
 
