@@ -443,7 +443,7 @@ section {
     flex: 3 auto;
   }
 }
-@media (max-width: 400) {
+@media (max-width: 400px) {
   /* line 354, ../sass/main.scss */
   .my-work .container .title {
     width: auto;
