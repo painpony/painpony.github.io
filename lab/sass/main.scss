@@ -28,12 +28,12 @@ h1{
 section{
   max-width: 1440px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 /*SECTIONG ABOUT ME*/
 .about-me{
   background-color: $light-purple;
-  overflow-x: hidden;
   .container{
     display:flex;
     justify-content: space-between;
@@ -118,6 +118,44 @@ section{
 }
 /*SECTION MY WORK */
 .my-work{
+  .combo{
+    position: absolute;
+    z-index: -1;
+  }
+  .combo-triangle{
+    background: url('../img/combo-triangle.svg') no-repeat;
+    width: 16.129em;
+    height: 13.013em;
+    top: 5em;
+  }
+  .combo-triangle-circle{
+    background: url('../img/combo-triangle-circle.svg') no-repeat;
+    width: 9.875em;
+    height: 5.250em;
+    top: 5em;
+    right:14em;
+  }
+  .combo-wiggly-circle{
+    background: url('../img/combo-wiggly-circle.svg') no-repeat;
+    width: 14.7em;
+    height: 10.750em;
+    top: 31em;
+    right:-3em;
+  }
+  .combo-circles{
+    background: url('../img/combo-circles.svg') no-repeat;
+    width: 14.812em;
+    height: 13.697em;
+    top: 50em;
+    left:-3em;
+  }
+  .combo-cube{
+    background: url('../img/combo-cube.svg') no-repeat;
+    width: 15.225em;
+    height: 13.106em;
+    top: 75em;
+    right:3em;
+  }
   .title{
     width: 13.750em;
     margin: 0 auto;
@@ -150,9 +188,14 @@ section{
       flex-direction: column;
       transition: all .3s ease-in-out;
       cursor: pointer;
+      background-color: #fff;
       .img{
         height: 16em;
-        opacity: 0.35;
+        width:100%;
+        overflow: hidden;
+        img{
+          height: 100%;
+        }
       }
       .project-description{
         flex: 1;
@@ -210,32 +253,61 @@ section{
   border: 9px solid $bright-blue;
   max-width: 50em;
   width: 80%;
-  max-height: 30em;
   height: auto;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);;
+  min-height: 31em;
 
-  .modal-content{
+  .modal-container{
     display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-
+    flex-flow: row wrap;
+  }
+    /*Top Bar*/
     .navigation-bar{
       flex: 1 100%;
       height: 2em;
       border-bottom: 9px solid $bright-blue;
       background-color: $pale-blue;
+
+      .icon-close__container{
+        float:right;
+        background-color: #fff;
+        padding: 0.25em;
+        border-left: 9px solid $bright-blue;
+      }
+
+      .icon-close__container:hover{
+        cursor: pointer;
+
+        .icon-close{
+          fill: $bright-pink;
+        }
+      }
     }
-    .img{
-      background-color: $grey;
-      flex: 4;
-      height: 27.5em;
+    /*Content*/
+    .modal-content{
+      display: flex;
+      padding: 4em 2em;
+
+    .project-img{
+      flex: 6;
+      padding: 1em;
+      display: flex;
+
+      .web-container{
+        background: url('../img/web-container.svg') no-repeat;
+        width: 100%;
+        height: 100%;
+        align-self: center;
+      }
     }
     .project-info{
       flex: 3;
-      padding: 2em 1em;
+      padding:1em;
+      align-self: center;
+
       h2{
         font-size: 2.75em;
         color: $dark-pale-pink;
@@ -243,6 +315,7 @@ section{
         font-weight: 600;
         padding-bottom: 0.85em;
       }
+
       p{
         line-height: 25px;
         font-weight: 300;
@@ -251,6 +324,13 @@ section{
   }
 }
 
+@media(max-width:1000px){
+  .my-work{
+    .combo-triangle-circle{
+      right:0;
+    }
+  }
+}
 
 @media (max-width:850px){
   .about-me{
@@ -272,15 +352,38 @@ section{
     }
   }
   .my-work{
+    .combo-triangle{
+      font-size: 0.95em;
+      top:13em;
+    }
     .projects{
       padding: 3em 1em;
     }
   }
+  .modal{
+    .modal-content{
+      flex-direction: column;
+      padding: 1em 2em;
+
+      .project-img{
+        height: 20em;
+        justify-content: center;
+
+        .web-container{
+          width: 28em;
+        }
+      }
+      .project-info{
+        text-align: center;
+      }
+    }
+  }
 }
 
-@media(max-width:500px){
+@media(max-width:600px){
   .description, .title{
     font-size: 0.8rem;
+
     p{
       font-weight: normal;
     }
@@ -288,8 +391,82 @@ section{
   .description{
     padding-left: 4em;
   }
-}
 
+  .modal.sm{
+    max-height: none;
+    transform: none;
+    position: static;
+    width:auto;
+
+    .modal-content{
+
+      .project-info{
+        flex: 3 auto;
+      }
+    }
+  }
+  .my-work{
+    .combo-cube{
+      top: 150em;
+      right: -9em;
+    }
+    .combo-circles{
+      top:79em;
+    }
+    .combo-triangle-circle{
+      display: none;
+    }
+    .combo-triangle-dots{
+      background: url('../img/combo-triangle-dots.svg') no-repeat;
+      width: 8.815em;
+      height: 9.982em;
+      top: 198em;
+      left:0;
+    }
+    .combo-half-circle{
+      background: url('../img/combo-half-circle.svg') no-repeat;
+      width: 12.500em;
+      height: 9.828em;
+      top: 230em;
+      right:-4em;
+    }
+    .container{
+      .title{
+        width: auto;
+        margin: auto;
+        text-align: center;
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
+  .modal{
+    min-height: 97.5vh;
+
+    .modal-container{
+      display: block;
+
+      .modal-content{
+        padding: 2em 0em;
+
+        .project-img{
+          height: 15em;
+          justify-content: center;
+          display: flex;
+
+          .web-container{
+            width: 23em;
+            align-self: center;
+          }
+        }
+        .project-info{
+          padding-top: 2em;
+        }
+      }
+    }
+  }
+}
 
 /*section{
 

@@ -85,13 +85,13 @@ h1 {
 section {
   max-width: 1440px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 /*SECTIONG ABOUT ME*/
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .about-me {
   background-color: #99a8f8;
-  overflow-x: hidden;
 }
 /* line 37, ../sass/main.scss */
 .about-me .container {
@@ -192,31 +192,75 @@ section {
 
 /*SECTION MY WORK */
 /* line 121, ../sass/main.scss */
+.my-work .combo {
+  position: absolute;
+  z-index: -1;
+}
+/* line 125, ../sass/main.scss */
+.my-work .combo-triangle {
+  background: url("../img/combo-triangle.svg") no-repeat;
+  width: 16.129em;
+  height: 13.013em;
+  top: 5em;
+}
+/* line 131, ../sass/main.scss */
+.my-work .combo-triangle-circle {
+  background: url("../img/combo-triangle-circle.svg") no-repeat;
+  width: 9.875em;
+  height: 5.250em;
+  top: 5em;
+  right: 14em;
+}
+/* line 138, ../sass/main.scss */
+.my-work .combo-wiggly-circle {
+  background: url("../img/combo-wiggly-circle.svg") no-repeat;
+  width: 14.7em;
+  height: 10.750em;
+  top: 31em;
+  right: -3em;
+}
+/* line 145, ../sass/main.scss */
+.my-work .combo-circles {
+  background: url("../img/combo-circles.svg") no-repeat;
+  width: 14.812em;
+  height: 13.697em;
+  top: 50em;
+  left: -3em;
+}
+/* line 152, ../sass/main.scss */
+.my-work .combo-cube {
+  background: url("../img/combo-cube.svg") no-repeat;
+  width: 15.225em;
+  height: 13.106em;
+  top: 75em;
+  right: 3em;
+}
+/* line 159, ../sass/main.scss */
 .my-work .title {
   width: 13.750em;
   margin: 0 auto;
 }
-/* line 124, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 .my-work .title h1 {
   text-transform: uppercase;
   color: #d73584;
   font-weight: 700;
 }
-/* line 129, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .my-work .title p {
   font-size: 2em;
   font-weight: 300;
   color: #2f344f;
   text-align: right;
 }
-/* line 136, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .my-work .projects {
   display: flex;
   flex-wrap: wrap;
   padding: 4em;
   justify-content: center;
 }
-/* line 142, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .my-work .box {
   width: 15.875em;
   height: 20.875em;
@@ -228,58 +272,64 @@ section {
   flex-direction: column;
   transition: all .3s ease-in-out;
   cursor: pointer;
+  background-color: #fff;
 }
-/* line 153, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 .my-work .box .img {
   height: 16em;
-  opacity: 0.35;
+  width: 100%;
+  overflow: hidden;
 }
-/* line 157, ../sass/main.scss */
+/* line 196, ../sass/main.scss */
+.my-work .box .img img {
+  height: 100%;
+}
+/* line 200, ../sass/main.scss */
 .my-work .box .project-description {
   flex: 1;
   padding: 1.35em 0;
 }
-/* line 160, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 .my-work .box .project-description p {
   text-align: center;
 }
-/* line 163, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .my-work .box .project-description .name {
   font-size: 1.25em;
   margin-bottom: 0.35em;
 }
-/* line 167, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .my-work .box .project-description .type {
   text-transform: uppercase;
   font-size: 0.85em;
   color: #adadad;
 }
-/* line 175, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .my-work .interfaces .img {
   background-color: #ef7fb2;
 }
-/* line 178, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .my-work .interfaces .name {
   color: #e4538c;
 }
-/* line 183, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .my-work .illustrations .img {
   background-color: #798ae9;
 }
-/* line 186, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .my-work .illustrations .name {
   color: #798ae9;
 }
-/* line 191, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 .my-work .branding .img {
   background-color: #74cec5;
 }
-/* line 194, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .my-work .branding .name {
   color: #66b5ab;
 }
 
-/* line 199, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .box:hover {
   transform: translate(0, -0.75em);
   -webkit-box-shadow: 0px 3px 40px 0px rgba(40, 33, 83, 0.2);
@@ -288,7 +338,7 @@ section {
 }
 
 /*  MODAL */
-/* line 209, ../sass/main.scss */
+/* line 252, ../sass/main.scss */
 .modal {
   border: 9px solid #798ae9;
   max-width: 50em;
@@ -302,58 +352,58 @@ section {
   /*Top Bar*/
   /*Content*/
 }
-/* line 220, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 .modal .modal-container {
   display: flex;
   flex-flow: row wrap;
 }
-/* line 225, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .modal .navigation-bar {
   flex: 1 100%;
   height: 2em;
   border-bottom: 9px solid #798ae9;
   background-color: #99a8f8;
 }
-/* line 231, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .modal .navigation-bar .icon-close__container {
   float: right;
   background-color: #fff;
   padding: 0.25em;
   border-left: 9px solid #798ae9;
 }
-/* line 238, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 .modal .navigation-bar .icon-close__container:hover {
   cursor: pointer;
 }
-/* line 241, ../sass/main.scss */
+/* line 284, ../sass/main.scss */
 .modal .navigation-bar .icon-close__container:hover .icon-close {
   fill: #d73584;
 }
-/* line 247, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 .modal .modal-content {
   display: flex;
   padding: 4em 2em;
 }
-/* line 251, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 .modal .modal-content .project-img {
   flex: 6;
   padding: 1em;
   display: flex;
 }
-/* line 256, ../sass/main.scss */
+/* line 299, ../sass/main.scss */
 .modal .modal-content .project-img .web-container {
   background: url("../img/web-container.svg") no-repeat;
   width: 100%;
   height: 100%;
   align-self: center;
 }
-/* line 263, ../sass/main.scss */
+/* line 306, ../sass/main.scss */
 .modal .modal-content .project-info {
   flex: 3;
   padding: 1em;
   align-self: center;
 }
-/* line 268, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 .modal .modal-content .project-info h2 {
   font-size: 2.75em;
   color: #e4538c;
@@ -361,98 +411,165 @@ section {
   font-weight: 600;
   padding-bottom: 0.85em;
 }
-/* line 276, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 .modal .modal-content .project-info p {
   line-height: 25px;
   font-weight: 300;
 }
 
+@media (max-width: 1000px) {
+  /* line 329, ../sass/main.scss */
+  .my-work .combo-triangle-circle {
+    right: 0;
+  }
+}
 @media (max-width: 850px) {
-  /* line 287, ../sass/main.scss */
+  /* line 337, ../sass/main.scss */
   .about-me .container {
     flex-wrap: wrap;
   }
-  /* line 289, ../sass/main.scss */
+  /* line 339, ../sass/main.scss */
   .about-me .container .black-circle {
     font-size: 0.825rem;
   }
 
-  /* line 294, ../sass/main.scss */
+  /* line 344, ../sass/main.scss */
   .description,
   .photo {
     width: 100%;
   }
 
-  /* line 298, ../sass/main.scss */
+  /* line 348, ../sass/main.scss */
   .photo {
     padding-top: 5em;
   }
-  /* line 300, ../sass/main.scss */
+  /* line 350, ../sass/main.scss */
   .photo .pink-stripes {
     top: 3.15em;
   }
 
-  /* line 305, ../sass/main.scss */
+  /* line 355, ../sass/main.scss */
+  .my-work .combo-triangle {
+    font-size: 0.95em;
+    top: 13em;
+  }
+  /* line 359, ../sass/main.scss */
   .my-work .projects {
     padding: 3em 1em;
   }
 
-  /* line 310, ../sass/main.scss */
+  /* line 364, ../sass/main.scss */
   .modal .modal-content {
     flex-direction: column;
     padding: 1em 2em;
   }
-  /* line 314, ../sass/main.scss */
+  /* line 368, ../sass/main.scss */
   .modal .modal-content .project-img {
     height: 20em;
     justify-content: center;
   }
-  /* line 318, ../sass/main.scss */
+  /* line 372, ../sass/main.scss */
   .modal .modal-content .project-img .web-container {
     width: 28em;
   }
-  /* line 322, ../sass/main.scss */
+  /* line 376, ../sass/main.scss */
   .modal .modal-content .project-info {
     text-align: center;
   }
 }
 @media (max-width: 600px) {
-  /* line 330, ../sass/main.scss */
+  /* line 384, ../sass/main.scss */
   .description, .title {
     font-size: 0.8rem;
   }
-  /* line 332, ../sass/main.scss */
+  /* line 387, ../sass/main.scss */
   .description p, .title p {
     font-weight: normal;
   }
 
-  /* line 336, ../sass/main.scss */
+  /* line 391, ../sass/main.scss */
   .description {
     padding-left: 4em;
   }
 
-  /* line 339, ../sass/main.scss */
+  /* line 395, ../sass/main.scss */
   .modal.sm {
     max-height: none;
     transform: none;
     position: static;
     width: auto;
   }
-  /* line 345, ../sass/main.scss */
+  /* line 403, ../sass/main.scss */
   .modal.sm .modal-content .project-info {
     flex: 3 auto;
   }
-}
-@media (max-width: 400px) {
-  /* line 354, ../sass/main.scss */
+
+  /* line 409, ../sass/main.scss */
+  .my-work .combo-cube {
+    top: 150em;
+    right: -9em;
+  }
+  /* line 413, ../sass/main.scss */
+  .my-work .combo-circles {
+    top: 79em;
+  }
+  /* line 416, ../sass/main.scss */
+  .my-work .combo-triangle-circle {
+    display: none;
+  }
+  /* line 419, ../sass/main.scss */
+  .my-work .combo-triangle-dots {
+    background: url("../img/combo-triangle-dots.svg") no-repeat;
+    width: 8.815em;
+    height: 9.982em;
+    top: 198em;
+    left: 0;
+  }
+  /* line 426, ../sass/main.scss */
+  .my-work .combo-half-circle {
+    background: url("../img/combo-half-circle.svg") no-repeat;
+    width: 12.500em;
+    height: 9.828em;
+    top: 230em;
+    right: -4em;
+  }
+  /* line 434, ../sass/main.scss */
   .my-work .container .title {
     width: auto;
     margin: auto;
     text-align: center;
   }
-  /* line 358, ../sass/main.scss */
+  /* line 438, ../sass/main.scss */
   .my-work .container .title p {
     text-align: center;
+  }
+
+  /* line 444, ../sass/main.scss */
+  .modal {
+    min-height: 97.5vh;
+  }
+  /* line 447, ../sass/main.scss */
+  .modal .modal-container {
+    display: block;
+  }
+  /* line 450, ../sass/main.scss */
+  .modal .modal-container .modal-content {
+    padding: 2em 0em;
+  }
+  /* line 453, ../sass/main.scss */
+  .modal .modal-container .modal-content .project-img {
+    height: 15em;
+    justify-content: center;
+    display: flex;
+  }
+  /* line 458, ../sass/main.scss */
+  .modal .modal-container .modal-content .project-img .web-container {
+    width: 23em;
+    align-self: center;
+  }
+  /* line 463, ../sass/main.scss */
+  .modal .modal-container .modal-content .project-info {
+    padding-top: 2em;
   }
 }
 /*section{
